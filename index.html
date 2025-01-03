@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Create Map Sample | Longdo Map</title>
+    <style type="text/css">
+      html {
+        height: 100%;
+      }
+      body {
+        margin: 0px;
+        height: 100%;
+      }
+      #map {
+        height: 100%;
+      }
+    </style>
+    <script type="text/javascript" src="https://api.longdo.com/map/?key=dbd70992a0ebe0c4eb3874851bf4d34d"></script>
+    <script>
+      function init() {
+        var map = new longdo.Map({
+          placeholder: document.getElementById('map'),
+          language: 'en'
+        });
+      }
+    </script>
+  </head>
+  
+  <body onload="init();">
+    <div id="map"></div>
+  </body>
+
+</html>
